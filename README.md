@@ -1,2 +1,0 @@
-# LinaresAlejandroArcasIliaMilanCarlosBuenoUnai_ASIX1_1665_AE12
-Trabajo practico de digitalización de empresa
