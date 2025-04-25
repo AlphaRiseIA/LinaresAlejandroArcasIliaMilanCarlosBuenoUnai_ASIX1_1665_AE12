@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Plan de Transformación Digital</title>
+    <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Plan de Transformación Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="#diagnostico">Diagnóstico</a></li>
+                <li><a href="#propuestas">Propuestas</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#acciones">Acciones</a></li>
+                <li><a href="#temporalizacion">Temporalización</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#responsables">Responsables</a></li>
+                <li><a href="#seguimiento">Seguimiento</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="diagnostico">
+            <h2>1. Diagnóstico interno de los problemas</h2>
+            <ol>
+                <li><strong>Software centralizado en un único equipo:</strong> Todos los programas críticos (económico, nóminas, salud, etc.) residen en el ordenador del administrador, con riesgo de pérdida de datos y baja seguridad.</li>
+                <li><strong>Solicitudes de mantenimiento en papel:</strong> Las incidencias de TI se registran en papel y se gestionan manualmente, sin trazabilidad ni seguimiento efectivo.</li>
+                <li><strong>Comunicación interna obsoleta:</strong> Avisos y circulares se distribuyen en papel; las reuniones se convocan con notas impresas en tablones, lo que genera retrasos y falta de control.</li>
+                <li><strong>Gestión de tiques de comedor tradicional y desorganizada:</strong> Compra en ventanilla física, listas manuales en conserjería y validación en papel al entrar al comedor; alta probabilidad de errores y demoras.</li>
+            </ol>
+        </section>
+        <section id="propuestas">
+            <h2>2. Propuestas de soluciones en digitalización</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Problema detectado</th>
+                        <th>Solución digital propuesta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Software centralizado</td>
+                        <td>Migración a una <strong>plataforma en la nube</strong> (IaaS/PaaS) para acceso remoto y multiusuario, con copias de seguridad automáticas.</td>
+                    </tr>
+                    <tr>
+                        <td>Solicitudes de mantenimiento en papel</td>
+                        <td>Implantación de <strong>JIRA Service Management</strong>, permitiendo registrar, asignar y hacer seguimiento de incidencias online.</td>
+                    </tr>
+                    <tr>
+                        <td>Comunicación interna obsoleta</td>
+                        <td>Automatización mediante un <strong>gateway de mensajería interna</strong> (p. ej. Microsoft Teams o Slack), con canales estructurados y notificaciones automáticas.</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de tiques de comedor</td>
+                        <td>Desarrollo de una <strong>app web/móvil</strong> con venta de tiques QR, escaneo en tiempo real y módulo de devoluciones e incidencias.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="objetivos">
+            <h2>3. Objetivos del PTD</h2>
+            <ul>
+                <li><strong>Descentralizar y asegurar</strong> el acceso a aplicaciones críticas.</li>
+                <li><strong>Eliminar el uso de papel</strong> en procesos clave y <strong>reducir tiempos de respuesta</strong>.</li>
+                <li><strong>Mejorar la comunicación interna</strong>, garantizando trazabilidad y transparencia.</li>
+                <li><strong>Optimizar el control</strong> de acceso y asistencia al comedor, minimizando errores y esperas.</li>
+            </ul>
+        </section>
+        <section id="acciones">
+            <h2>4. Acciones específicas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>Herramienta / Tecnología</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Desplegar infraestructura cloud con IAM y backups automatizados.</td>
+                        <td>AWS/Azure + Terraform + Vault</td>
+                    </tr>
+                    <tr>
+                        <td>Configurar JIRA Service Management: flujos de trabajo, permisos y SLA.</td>
+                        <td>Atlassian JSM</td>
+                    </tr>
+                    <tr>
+                        <td>Crear canales y bots en Teams/Slack para envío de avisos y recordatorios internos.</td>
+                        <td>Microsoft Teams API o Slack Apps</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollar portal de tiques QR: frontend React, backend Node.js, base de datos Firebase.</td>
+                        <td>React, Node.js, Firebase, Stripe (pagos)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="temporalizacion">
+            <h2>5. Temporalización</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Duración</th>
+                        <th>Fecha de inicio</th>
+                        <th>Fecha de fin aprox.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Planificación</td>
+                        <td>2 semanas</td>
+                        <td>05/05/2025</td>
+                        <td>18/05/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Infraestructura Cloud</td>
+                        <td>3 semanas</td>
+                        <td>19/05/2025</td>
+                        <td>08/06/2025</td>
+                    </tr>
+                    <tr>
+                        <td>JIRA Service</td>
+                        <td>2 semanas</td>
+                        <td>09/06/2025</td>
+                        <td>22/06/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Comunicación interna</td>
+                        <td>2 semanas</td>
+                        <td>23/06/2025</td>
+                        <td>06/07/2025</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo QR Tiques</td>
+                        <td>4 semanas</td>
+                        <td>07/07/2025</td>
+                        <td>03/08/2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="recursos">
+            <h2>6. Recursos necesarios</h2>
+            <h3>Tecnológicos</h3>
+            <ul>
+                <li>Suscripción Cloud (AWS/Azure).</li>
+                <li>Licencias Atlassian JSM.</li>
+                <li>Hosting y dominio para la app de tiques.</li>
+            </ul>
+            <h3>Humanos</h3>
+            <ul>
+                <li>1 Arquitecto Cloud.</li>
+                <li>1 Administrador de Sistemas.</li>
+                <li>1 Desarrollador Full-Stack.</li>
+                <li>1 Especialista en comunicación interna.</li>
+            </ul>
+        </section>
+        <section id="responsables">
+            <h2>7. Responsables de cada acción</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Acción</th>
+                        <th>Responsable</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Planificación general</td>
+                        <td>Director de TI</td>
+                    </tr>
+                    <tr>
+                        <td>Infraestructura Cloud</td>
+                        <td>Arquitecto Cloud</td>
+                    </tr>
+                    <tr>
+                        <td>JIRA Service Management</td>
+                        <td>Administrador de Sistemas</td>
+                    </tr>
+                    <tr>
+                        <td>Comunicación interna automatizada</td>
+                        <td>Especialista en Comunicación</td>
+                    </tr>
+                    <tr>
+                        <td>Portal de tiques QR</td>
+                        <td>Desarrollador Full-Stack</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="seguimiento">
+            <h2>8. Medidas de seguimiento y evaluación</h2>
+            <h3>KPIs técnicos</h3>
+            <ul>
+                <li>Tiempo de aprovisionamiento Cloud ( h ).</li>
+                <li>Disponibilidad ( % ).</li>
+            </ul>
+            <h3>KPIs de proceso</h3>
+            <ul>
+                <li>% de incidencias gestionadas vía JIRA vs papel.</li>
+                <li>Reducción del tiempo medio de resolución.</li>
+            </ul>
+            <h3>Adopción de usuarios</h3>
+            <ul>
+                <li>Nº de tiques electrónicos emitidos vs papel.</li>
+                <li>Encuestas de satisfacción interna.</li>
+            </ul>
+        </section>
+        <div class="slider-nav">
+            <a href="#diagnostico">1</a>
+            <a href="#propuestas">2</a>
+            <a href="#objetivos">3</a>
+            <a href="#acciones">4</a>
+            <a href="#temporalizacion">5</a>
+            <a href="#recursos">6</a>
+            <a href="#responsables">7</a>
+            <a href="#seguimiento">8</a>
+          </div>
+          
+    </main>
+    <footer>
+        <p>© Alejandro Linares - Ilia Arcas - Carlos Milan - Unai Bueno</p>
+    </footer>
+</body>
+
+</html>
